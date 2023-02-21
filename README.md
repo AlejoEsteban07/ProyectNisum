@@ -19,6 +19,7 @@ El proyecto es una aplicación web para la creación de usuarios
 2. Abrir o importar el back del proyecto desde el IDE de desarrollo. Es un proyecyo Maven.
 3. Descargar de Maven las librerias que la aplicación requiera (Clean and Build)
 4. Sobre la raiz del proyecto dar click derecho Run As -> Spring Boot App. Esto permitira subir el servidor de la aplicación.
+5. La información se almacena en la BD H2 en memoria
 
 La aplicación no cuenta con data de Usuarios creados.
 
@@ -42,7 +43,10 @@ La aplicación no cuenta con data de Usuarios creados.
 			]
 		}
 	- Consumir el servicio (Send)
-
+2. Se puede validar la información desde la url de la BD: 
+   	- http://localhost:8080/h2-console
+	- usuario: sa
+	- password: 
 
 ## Despliegue 📦
 
@@ -54,6 +58,7 @@ El proyecto cuenta con un servidor embebido (Tomcat) para realizar el respectivo
 * [Spring Boot](https://spring.io/projects/spring-boot) - Framework usado
 * [Maven](https://maven.apache.org/) - Manejador de dependencias
 * [Github](https://github.com/)
+* [H2]
 
 
 ## Versionado 📌
